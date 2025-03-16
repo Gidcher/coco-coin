@@ -32,13 +32,18 @@
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a href="#overview" class="header__menu-link">
-                  Overview
+                <a href="#buy" class="header__menu-link">
+                  Buy Token
                 </a>
               </li>
               <li class="header__menu-item">
-                <a href="#partnership" class="header__menu-link">
-                  Partnership
+                <a href="#exchanges" class="header__menu-link">
+                  Exchanges
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#charity" class="header__menu-link">
+                  Charity
                 </a>
               </li>
               <li class="header__menu-item">
@@ -92,127 +97,139 @@
       </div>
       <p class="hero__value h4">TOKEN PRICE: <span data-js-token-price>Loading...</span></p>
     </section>
-    
-    
 
-    <section class="section overview container" id="overview">
-      <header class="section__header container">
+    <section class="section buy-token container" id="buy">
+      <header class="section__header">
         <h2 class="section__title">
-          CoCo Transaction Overview
-        </h2>
-      </header>
-      <ul class="overview__list">
-        <li class="overview__item">
-          <img 
-            src="./images/icons/overview-1.svg" 
-            alt="Market Value Icon"
-            class="overview__image"
-            width="70" height="70" loading="lazy"
-          >
-          <h3 class="overview__title h4">
-            Market value
-          </h3>
-          <p class="overview__subtitle h4">
-            Current market value
-          </p>
-          <p class="overview__rate h3">
-            about $60M
-          </p>
-        </li>
-        <li class="overview__item">
-          <img 
-            src="./images/icons/overview-2.svg" 
-            alt="Group of people"
-            class="overview__image"
-            width="70" height="70" loading="lazy"
-          >
-          <h3 class="overview__title h4">
-            User Base
-          </h3>
-          <p class="overview__subtitle h4">
-            Deposit address
-          </p>
-          <p class="overview__rate h3">
-            200,000+
-          </p>
-        </li>
-        <li class="overview__item">
-          <img 
-            src="./images/icons/overview-3.svg" 
-            alt="Exchange image"
-            class="overview__image"
-            width="70" height="70" loading="lazy"
-          >
-          <h3 class="overview__title h4">
-            Volume of transaction
-          </h3>
-          <p class="overview__subtitle h4">
-            Daily Trading Volume
-          </p>
-          <p class="overview__rate h3">
-            $3M+
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section partnership container" id="partnership">
-      <header class="section__header container">
-        <h2 class="section__title">
-          CoCo Partnership
+          Where to Buy CoCo?
         </h2>
         <p class="section__description">
-          Currently, CoCo Coin has established multiple strategic partnerships and collaborations. These partnerships highlight CoCo Coin’s strategic approach to building a robust ecosystem.
+          You can buy CoCo Coin on PancakeSwap and track transactions on BSC Scan.
         </p>
       </header>
-      <ul class="partnership__list">
-        <li class="partnership__item">
+      <div class="buy-token__options">
+        <a href="https://pancakeswap.finance/swap?outputCurrency=0xF563E86e461dE100CfCfD8b65dAA542d3d4B0550" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="buy-token__link"
+        >
+          <img src="./images/buy-token/pancakeswap.svg" 
+              alt="PancakeSwap Link"
+              class="buy-token__image"
+              width="200" height="60">
+          <span class="buy-token__text">Trade on PancakeSwap</span>
+        </a>
+
+        <a href="https://bscscan.com/token/0xF563E86e461dE100CfCfD8b65dAA542d3d4B0550" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="buy-token__link"
+        >
+          <img src="./images/buy-token/bsc.svg" 
+              alt="BSC Scan Link"
+              class="buy-token__image"
+              width="200" height="60">
+          <span class="buy-token__text">View Contract on BSC Scan</span>
+        </a>
+      </div>
+    </section>
+    
+    <section class="section exchanges container" id="exchanges">
+      <header class="section__header container">
+        <h2 class="section__title">
+          Available on Exchanges
+        </h2>
+        <p class="section__description">
+          CoCo Coin is officially listed on the following exchanges. Start trading today!
+        </p>
+      </header>
+      <ul class="exchanges__list">
+        <li class="exchanges__item">
           <img 
-            src="./images/partners/binance.png" 
+            src="./images/exchanges/binance.png" 
             title="Binance"
             alt="Binance logo"
-            class="partnership__image"
+            class="exchanges__image"
             width="290" height="58" loading="lazy"
           >
         </li>
-        <li class="partnership__item">
+        <li class="exchanges__item">
           <img 
-            src="./images/partners/thena.png" 
+            src="./images/exchanges/thena.png" 
             title="THENA"
             alt="THENA logo"
-            class="partnership__image"
+            class="exchanges__image"
             width="60" height="60" loading="lazy"
           >
         </li>
-        <li class="partnership__item">
+        <li class="exchanges__item">
           <img 
-            src="./images/partners/vanilla-finance.png" 
+            src="./images/exchanges/vanilla-finance.png" 
             title="Vanilla Finance"
             alt="Vanilla Finance logo"
-            class="partnership__image"
+            class="exchanges__image"
             width="60" height="60" loading="lazy"
             style="border-radius: 50%;"
           >
         </li>
-        <li class="partnership__item">
+        <li class="exchanges__item">
           <img 
-            src="./images/partners/pancake-swap.png" 
+            src="./images/exchanges/pancake-swap.png" 
             title="PancakeSwap"
             alt="PancakeSwap logo"
-            class="partnership__image"
+            class="exchanges__image"
             width="290" height="45" loading="lazy"
           >
         </li>
-        <li class="partnership__item">
+        <li class="exchanges__item">
           <img 
-            src="./images/partners/gate-io.png" 
+            src="./images/exchanges/gate-io.png" 
             title="Gate.io"
             alt="Gate.io logo"
-            class="partnership__image"
+            class="exchanges__image"
             width="290" height="70" loading="lazy"
           >
         </li> 
       </ul>
+    </section>
+
+    <section class="section charity container" id="charity">
+      <header class="section__header">
+        <h2 class="section__title">
+          CoCo for Good: Supporting Charity
+        </h2>
+        <p class="section__description">
+          The CoCo Coin community actively collaborates with charitable organizations and is always looking for new ways to make a positive impact.  
+        </p>
+      </header>
+      <div class="charity__partners">
+        <a href="https://www.redcross.org/" target="_blank" rel="noopener noreferrer" class="charity__partner">
+          <img src="./images/charity/red-cross.png" 
+            alt="Red Cross"
+            class="charity__image"
+            width="200" height="80"
+          >
+          <span class="charity__text">Supporting global relief efforts</span>
+        </a>
+    
+        <a href="https://www.unicef.org/" target="_blank" rel="noopener noreferrer" class="charity__partner">
+          <img src="./images/charity/unicef.png" 
+            alt="UNICEF"
+            class="charity__image"
+            width="200" height="80"
+          >
+          <span class="charity__text">Helping children worldwide</span>
+        </a>
+    
+        <a href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer" class="charity__partner">
+          <img src="./images/charity/wwf.png" 
+            alt="WWF"
+            class="charity__image"
+            width="200" height="80"
+          >
+          <span class="charity__text">Protecting nature and wildlife</span>
+        </a>
+      </div>
     </section>
 
     <section class="section gallery container" id="community">
@@ -408,7 +425,7 @@
       </li>
     </ul>
     <p class="footer__copyright">
-      &copy; 2025 CoCo Coin Community.
+      &copy; 2025 CoCo Coin Community.фз
     </p>
   </footer>
 </body>

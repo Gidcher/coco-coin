@@ -1,0 +1,43 @@
+@use '../helpers' as *;
+
+.charity {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: fluid(48, 16);
+
+  &__partners {
+    display: flex;
+    gap: fluid(128, 16);
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    width: fluid(200, 150);
+    height: auto;
+  }
+
+  &__text {
+    margin-top: rem(8);
+    font-weight: bold;
+  }
+}
