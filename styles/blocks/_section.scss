@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.section {
+  display: grid;
+  row-gap: fluid(64, 16);
+  margin-block: fluid(96, 24);
+
+  &:nth-child(2) {
+    margin-top: fluid(56, 16);
+  }
+
+  &:last-child {
+    margin-bottom: fluid(56, 16);
+  }
+
+  &__header {
+    display: grid;
+    row-gap: fluid(12, 10);
+    padding: fluid(20, 16) fluid(30, 16);
+    background-color: var(--color-dark-alt);
+    border-radius: var(--border-radius);
+    border: var(--border);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    @include fluid-text(22, 14);
+  }
+}

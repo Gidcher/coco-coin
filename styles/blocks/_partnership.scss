@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+.partnership {
+
+  &__list {
+    max-width: 50%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: rem(60);
+
+    background-color: var(--color-dark-alt);
+    border-radius: var(--border-radius);
+    padding: fluid(24, 12);
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}

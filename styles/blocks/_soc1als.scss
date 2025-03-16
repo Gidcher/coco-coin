@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.soc1als {
+  
+  &__link{
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    column-gap: fluid(12, 6);
+
+    border-radius: var(--border-radius);
+    background-color: var(--color-dark-alt);
+    padding: fluid(16, 8);
+    border: var(--border);
+
+    @include hover {
+      background-color: var(--color-accent);
+      color: var(--color-light);
+      border-color: var(--color-main);
+    }
+  }
+
+  &__icon {
+    padding: rem(4);
+  }
+}

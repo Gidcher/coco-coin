@@ -1,0 +1,111 @@
+@use '../helpers' as *;
+
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  @include mobile {
+    margin: 0;
+  }
+
+  &__body {
+    padding-block: fluid(16, 0);
+    background-color: var(--color-dark-alt);
+    border: var(--border);
+    font-family: var(--font-family-accent);
+    max-width: rem(1920);
+    margin-inline: auto;
+
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: rem(100) rem(200);
+
+    @keyframes scrolling-header {
+      to {
+        box-shadow: 0 0 1rem 0 var(--color-main);
+      }
+    }
+
+    @include mobile {
+      border-radius: 0;
+    }
+
+    &-inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: fluid(16, 8);
+      column-gap: 2rem;
+
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+
+  &__overlay {
+    @include mobile-above {
+      display: contents;
+    }
+
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 3rem;
+      padding: 1rem;
+      background-color: var(--color-dark-alt);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    @include mobile {
+      overflow-y: auto;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: fluid(96, 48);
+
+      @include laptop {
+        column-gap: rem(6);
+      }
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+    }
+
+    &-link {
+      @include fluid-text(24, 14);
+      padding: rem(14) rem(24);
+      color: var(--color-accent);
+      border-radius: rem(16);
+      text-transform: uppercase;
+
+      @include laptop {
+        padding: rem(10) rem(18);
+      }
+
+      @include hover {
+        color: var(--color-main);
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}

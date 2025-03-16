@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>CoCo Coin</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__body">
+      <div class="header__body-inner">
+        <a 
+          href="/"
+          class="header__logo logo"
+          aria-label="Home"
+          title="Home"
+        >
+          <img 
+            src="./images/logo.png"
+            alt="CoCo Coin Logo" 
+            class="logo__image"
+            width="70" height="70"
+          >
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#overview" class="header__menu-link">
+                  Overview
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#partnership" class="header__menu-link">
+                  Partnership
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#community" class="header__menu-link">
+                  Community
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#join-us" class="header__menu-link">
+                  Join Us
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#soc1als" class="header__menu-link">
+                  Socials
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button 
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__overlay">
+        <h1 class="hero__title h2">
+          CoCo: The Meme Revolution in Web3
+        </h1>
+        <p class="hero__description">
+          COCO is inspired by the viral PEPE Frog MEME, merging humor and technology to become a cultural symbol in the blockchain world. It breaks language barriers and unites decentralized communities under the spirit of "peace and freedom".
+        </p>
+        <p class="hero__description">
+          Beyond just a meme, COCO is a bridge between community, technology, and real-world impact. Through the power of decentralization, MEME culture is transforming into a force that drives social equity and technological advancement.
+        </p>
+        <div class="hero__buttons">
+          <a href="#soc1als" class="button hero__button">Join Community</a>
+        </div>
+      </div>
+      <p class="hero__value h4">TOKEN PRICE: <span data-js-token-price>Loading...</span></p>
+    </section>
+    
+    
+
+    <section class="section overview container" id="overview">
+      <header class="section__header container">
+        <h2 class="section__title">
+          CoCo Transaction Overview
+        </h2>
+      </header>
+      <ul class="overview__list">
+        <li class="overview__item">
+          <img 
+            src="./images/icons/overview-1.svg" 
+            alt="Market Value Icon"
+            class="overview__image"
+            width="70" height="70" loading="lazy"
+          >
+          <h3 class="overview__title h4">
+            Market value
+          </h3>
+          <p class="overview__subtitle h4">
+            Current market value
+          </p>
+          <p class="overview__rate h3">
+            about $60M
+          </p>
+        </li>
+        <li class="overview__item">
+          <img 
+            src="./images/icons/overview-2.svg" 
+            alt="Group of people"
+            class="overview__image"
+            width="70" height="70" loading="lazy"
+          >
+          <h3 class="overview__title h4">
+            User Base
+          </h3>
+          <p class="overview__subtitle h4">
+            Deposit address
+          </p>
+          <p class="overview__rate h3">
+            200,000+
+          </p>
+        </li>
+        <li class="overview__item">
+          <img 
+            src="./images/icons/overview-3.svg" 
+            alt="Exchange image"
+            class="overview__image"
+            width="70" height="70" loading="lazy"
+          >
+          <h3 class="overview__title h4">
+            Volume of transaction
+          </h3>
+          <p class="overview__subtitle h4">
+            Daily Trading Volume
+          </p>
+          <p class="overview__rate h3">
+            $3M+
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section partnership container" id="partnership">
+      <header class="section__header container">
+        <h2 class="section__title">
+          CoCo Partnership
+        </h2>
+        <p class="section__description">
+          Currently, CoCo Coin has established multiple strategic partnerships and collaborations. These partnerships highlight CoCo Coin’s strategic approach to building a robust ecosystem.
+        </p>
+      </header>
+      <ul class="partnership__list">
+        <li class="partnership__item">
+          <img 
+            src="./images/partners/binance.png" 
+            title="Binance"
+            alt="Binance logo"
+            class="partnership__image"
+            width="290" height="58" loading="lazy"
+          >
+        </li>
+        <li class="partnership__item">
+          <img 
+            src="./images/partners/thena.png" 
+            title="THENA"
+            alt="THENA logo"
+            class="partnership__image"
+            width="60" height="60" loading="lazy"
+          >
+        </li>
+        <li class="partnership__item">
+          <img 
+            src="./images/partners/vanilla-finance.png" 
+            title="Vanilla Finance"
+            alt="Vanilla Finance logo"
+            class="partnership__image"
+            width="60" height="60" loading="lazy"
+            style="border-radius: 50%;"
+          >
+        </li>
+        <li class="partnership__item">
+          <img 
+            src="./images/partners/pancake-swap.png" 
+            title="PancakeSwap"
+            alt="PancakeSwap logo"
+            class="partnership__image"
+            width="290" height="45" loading="lazy"
+          >
+        </li>
+        <li class="partnership__item">
+          <img 
+            src="./images/partners/gate-io.png" 
+            title="Gate.io"
+            alt="Gate.io logo"
+            class="partnership__image"
+            width="290" height="70" loading="lazy"
+          >
+        </li> 
+      </ul>
+    </section>
+
+    <section class="section gallery container" id="community">
+      <header class="section__header container">
+        <h2 class="section__title">
+          Global Expansion & Community Activity
+        </h2>
+        <p class="section__description">
+          CoCo takes Blockchain technology and MEME culture as the core, actively participates in Devcon, Binance Blockchain Week and other large-scale online and offline activities, and continues to expand the global community foundation. Through the deep linkage between online and offline, CoCo is committed to building a global, community-driven ecosystem.
+        </p>
+      </header>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-1.png" 
+            alt="" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-2.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-3.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-4.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-5.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-6.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-7.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+        <li class="gallery__item">
+          <img 
+            src="./images/gallery/gallery-8.png" 
+            alt="CoCO event photo" 
+            class="gallery__image"
+            width="300" height="190" loading="lazy"
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section class="section join-us container" id="join-us">
+      <header class="section__header join-us__content">
+        <h2 class="section__title">
+          JOIN US!
+        </h2>
+        <p class="section__description">
+          COCO is a bridge connecting community, technology and reality. Through the two-way combination of culture and technology, MEME culture is no longer limited to entertainment, but an important force to promote real value and social development.
+        </p>
+        <p class="section__description">
+          Let "peace and freedom" take root in the world of blockchain, and become a force to promote social equity and technology popularization.
+        </p>
+      </header>
+      <div class="join-us__image">
+        <img 
+          src="./images/join-us/join-us-1.png" 
+          alt="CoCo community" 
+          width="328" height="328" loading="lazy"
+        >
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <ul class="footer__soc1als soc1als" id="soc1als">
+      <li class="soc1als__item">
+        <a 
+          href="https://t.me/cococoin_community" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="soc1als__link"
+        >
+          <img 
+            src="./images/soc1als/telegram.svg" 
+            alt="Telegram"
+            class="soc1als__icon"
+            width="40" height="40" loading="lazy"
+          >
+          <span class="soc1als__text">
+            Channel (EN)
+          </span>
+        </a>
+      </li>
+      <li class="soc1als__item">
+        <a 
+          href="https://t.me/cococoin_community_chat" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="soc1als__link"
+        >
+          <img 
+            src="./images/soc1als/telegram.svg" 
+            alt="Telegram"
+            class="soc1als__icon"
+            width="40" height="40" loading="lazy"
+          >
+          <span class="soc1als__text">
+            Chat (EN)
+          </span>
+        </a>
+      </li>
+      <li class="soc1als__item">
+        <a 
+          href="https://t.me/cococoin_community_ru" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="soc1als__link"
+        >
+          <img 
+            src="./images/soc1als/telegram.svg" 
+            alt="Telegram"
+            class="soc1als__icon"
+            width="40" height="40" loading="lazy"
+          >
+          <span class="soc1als__text">
+            Channel (RU)
+          </span>
+        </a>
+      </li>
+      <li class="soc1als__item">
+        <a 
+          href="https://t.me/cococoin_community_chat_ru" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="soc1als__link"
+        >
+          <img 
+            src="./images/soc1als/telegram.svg" 
+            alt="Telegram"
+            class="soc1als__icon"
+            width="40" height="40" loading="lazy"
+          >
+          <span class="soc1als__text">
+            Chat (RU)
+          </span>
+        </a>
+      </li>
+      <li class="soc1als__item">
+        <a 
+          href="https://x.com/cococtoglobal?s=21&t=1aoOtf-wav8WWdMuT_iZLg" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="soc1als__link"
+        >
+          <img 
+            src="./images/soc1als/x.svg" 
+            alt="X"
+            class="soc1als__icon"
+            width="40" height="40" loading="lazy"
+          >
+          <span class="soc1als__text">
+            @CocoCtoglobal
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p class="footer__copyright">
+      &copy; 2025 CoCo Coin. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>

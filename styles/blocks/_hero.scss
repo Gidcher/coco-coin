@@ -1,0 +1,81 @@
+@use '../helpers' as *;
+
+@keyframes heroBackground {
+  0% { background-image: url("../images/hero/hero-bg-1.png"); }
+  29% { background-image: url("../images/hero/hero-bg-1.png"); }
+  34% { background-image: url("../images/hero/hero-bg-2.png"); }
+  63% { background-image: url("../images/hero/hero-bg-2.png"); }
+  68% { background-image: url("../images/hero/hero-bg-3.png"); }
+  97% { background-image: url("../images/hero/hero-bg-3.png"); }
+  100% { background-image: url("../images/hero/hero-bg-1.png"); } 
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - rem(90));
+  background: url("../images/hero/hero-bg-2.png") bottom/cover no-repeat;
+  animation: heroBackground 24s infinite linear;
+  max-width: rem(1920);
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -(rem(80)) rem(100) rgba(0, 0, 0, 0.8); 
+  padding-inline: rem(6);
+
+  @include mobile {
+    background-position: left;
+  }
+  
+  &__overlay { 
+    background: rgba(0, 0, 0, 0.8);
+    padding: fluid(32, 8);
+    border-radius: var(--border-radius);
+    max-width: rem(1200);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: fluid(14, 2);
+
+    @include mobile {
+      max-width: 100%
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    @include mobile {
+      @include fluid-text (40, 20);
+    }
+  }
+
+  &__description {
+    @include fluid-text(24, 14);
+
+    @include mobile {
+      @include fluid-text(18, 14);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: rem(16);
+    justify-content: center;
+  }
+
+  &__value {
+    position: absolute;
+    font-family: var(--font-family-accent);
+    width: 100%;
+    text-align: center;
+    top: 90%;
+    text-shadow: var(--text-shadow);
+
+    @include laptop {
+      text-align: right;
+      padding-right: rem(6);
+    }
+  }
+}

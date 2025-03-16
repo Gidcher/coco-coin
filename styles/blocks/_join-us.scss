@@ -1,0 +1,55 @@
+@use '../helpers' as *;
+
+.join-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(32);
+
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 80%;
+
+    @include mobile {
+      max-width: 100%;
+      order: 1;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--border-radius);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: rem(328);
+      height: rem(328);
+      background: url("../images/join-us/join-us-2.png") center/contain no-repeat;
+      border-radius: var(--border-radius);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  
+}
+
+

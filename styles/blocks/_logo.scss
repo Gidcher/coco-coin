@@ -1,0 +1,10 @@
+@use '../helpers' as *;
+
+.logo {
+  max-width: fluid(70, 50);
+  
+  @include hover {
+    scale: 1.1;
+    transition-duration: var(--transition-duration);
+  }
+}

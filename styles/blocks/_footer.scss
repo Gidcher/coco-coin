@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+.footer {
+  display: grid;
+  row-gap: fluid(24, 12);
+  margin-bottom: fluid(12, 8);
+
+  &__soc1als {
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: fluid(48, 16);
+  }
+
+  &__copyright {
+    @include fluid-text(20, 14);
+    text-align: center;
+    color: var(--color-dark-alt);
+  }
+}
