@@ -3,7 +3,10 @@
 .section {
   display: grid;
   row-gap: fluid(64, 16);
-  margin-block: fluid(96, 24);
+  
+  &:not(.hero) {
+    margin-block: fluid(96, 24);
+  }
 
   &:nth-child(2) {
     margin-top: fluid(56, 16);

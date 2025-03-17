@@ -16,7 +16,7 @@
     <div class="header__body">
       <div class="header__body-inner">
         <a 
-          href="/"
+          href="./index.html"
           class="header__logo logo"
           aria-label="Home"
           title="Home"
@@ -52,11 +52,6 @@
                 </a>
               </li>
               <li class="header__menu-item">
-                <a href="#join-us" class="header__menu-link">
-                  Join Us
-                </a>
-              </li>
-              <li class="header__menu-item">
                 <a href="#soc1als" class="header__menu-link">
                   Socials
                 </a>
@@ -80,25 +75,23 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero__overlay">
-        <h1 class="hero__title h2">
-          CoCo: The Meme Revolution in Web3
-        </h1>
-        <p class="hero__description">
+    <section class="section container hero">
+      <header class="section__header">
+        <h1 class="section__title h2">CoCo: The Meme Revolution in Web3</h1>
+        <p class="section__description">
           COCO is inspired by the viral PEPE Frog MEME, merging humor and technology to become a cultural symbol in the blockchain world. It breaks language barriers and unites decentralized communities under the spirit of "peace and freedom".
         </p>
-        <p class="hero__description">
+        <p class="section__description">
           Beyond just a meme, COCO is a bridge between community, technology, and real-world impact. Through the power of decentralization, MEME culture is transforming into a force that drives social equity and technological advancement.
         </p>
-        <div class="hero__buttons">
-          <a href="#soc1als" class="button hero__button">Join Community</a>
-        </div>
+      </header>
+      <div class="hero__body">
+        <p class="hero__value h2">TOKEN PRICE: <span data-js-token-price>Loading...</span></p>
+        <a href="#soc1als" class="button hero__button">Join Community</a>
       </div>
-      <p class="hero__value h4">TOKEN PRICE: <span data-js-token-price>Loading...</span></p>
-    </section>
+    </section>       
 
-    <section class="section buy-token container" id="buy">
+    <section class="section container buy-token" id="buy">
       <header class="section__header">
         <h2 class="section__title">
           Where to Buy CoCo?
@@ -134,7 +127,7 @@
       </div>
     </section>
     
-    <section class="section exchanges container" id="exchanges">
+    <section class="section container exchanges" id="exchanges">
       <header class="section__header container">
         <h2 class="section__title">
           Available on Exchanges
@@ -193,7 +186,7 @@
       </ul>
     </section>
 
-    <section class="section charity container" id="charity">
+    <section class="section container charity" id="charity">
       <header class="section__header">
         <h2 class="section__title">
           CoCo for Good: Supporting Charity
@@ -232,7 +225,7 @@
       </div>
     </section>
 
-    <section class="section gallery container" id="community">
+    <section class="section container gallery" id="community">
       <header class="section__header container">
         <h2 class="section__title">
           Global Expansion & Community Activity
@@ -309,7 +302,7 @@
       </ul>
     </section>
 
-    <section class="section join-us container" id="join-us">
+    <section class="section container join-us" id="join-us">
       <header class="section__header join-us__content">
         <h2 class="section__title">
           JOIN US!
@@ -424,8 +417,8 @@
         </a>
       </li>
     </ul>
-    <p class="footer__copyright">
-      &copy; 2025 CoCo Coin Community.фз
+    <p class="footer__creators">
+      CoCo Coin Community
     </p>
   </footer>
 </body>

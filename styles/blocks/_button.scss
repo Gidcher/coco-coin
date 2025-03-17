@@ -1,12 +1,12 @@
 @use '../helpers' as *;
 
 .button {
-  @include fluid-text(18, 14);
+  @include fluid-text(18, 16);
   
   display: inline-flex;
   justify-content: center;
-  min-width: rem(100);
-  padding: fluid(16, 7) fluid(24, 8);
+  max-width: rem(200);
+  padding: rem(16) rem(24);
   white-space: nowrap;
 
   color: var(--color-light);
