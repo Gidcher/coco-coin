@@ -578,6 +578,8 @@ button[aria-label]::before {
   }
 }
 .hero__value {
+  font-size: clamp(1.5rem, 0.8150826446rem + 2.8099173554vw, 3.625rem);
+  font-family: var(--font-family-accent);
   background-color: var(--color-dark-alt);
   color: var(--color-light);
   border-radius: var(--border-radius);

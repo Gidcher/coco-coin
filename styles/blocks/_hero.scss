@@ -38,6 +38,10 @@
   }
 
   &__value {
+    @include fluid-text (58, 24);
+    
+    font-family: var(--font-family-accent);
+
     background-color: var(--color-dark-alt);
     color: var(--color-light);
     border-radius: var(--border-radius);
