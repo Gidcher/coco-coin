@@ -3,13 +3,13 @@
 .exchanges {
 
   &__list {
-    max-width: 50%;
+    max-width: 55%;
     margin-inline: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: rem(60);
+    gap: rem(40);
 
     background-color: var(--color-dark-alt);
     border-radius: var(--border-radius);
@@ -17,6 +17,27 @@
 
     @include mobile {
       max-width: 100%;
+    }
+  }
+
+  &__item {
+    display: grid;
+    text-align: center;
+    row-gap: rem(2);
+    font-size: rem(14);
+
+    &--light {
+      background-color: var(--color-light);
+      padding: rem(6);
+      border-radius: var(--border-radius);
+    }
+  }
+
+  &__image {
+    margin-inline: auto;
+
+    &.is-rounded {
+      border-radius: 50%;
     }
   }
 }

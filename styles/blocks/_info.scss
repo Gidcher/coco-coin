@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+
+.info {
+  display: grid;
+  row-gap: fluid(64,16);
+
+  & section {
+    margin-block: 0;
+  }
+
+  &-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(32);
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__content {
+      flex: 1;
+
+      @include mobile {
+        order: 1;
+      }
+    }
+
+    &__image {
+      width: rem(328);
+      height: rem(328);
+      display: flex;
+      margin-inline: auto;
+      position: relative;
+
+      &-bg {
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: rem(328);
+        height: rem(328);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: var(--border-radius);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &.card-1::after {
+        background-image: url("../images/cards/card-2.jpg");
+      }
+
+      &.card-2::after {
+        background-image: url("../images/cards/card-4.jpg");
+      }
+
+      &.card-3::after {
+        background-image: url("../images/cards/card-6.png");
+      }
+    
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+}
