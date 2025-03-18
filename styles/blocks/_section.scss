@@ -5,7 +5,7 @@
   row-gap: fluid(64, 16);
   
   &:not(.hero):not(.info-card) {
-    margin-block: fluid(96, 24);
+    margin-block: fluid(80, 24);
   }
 
   &:nth-child(2) {

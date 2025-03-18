@@ -9,7 +9,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: rem(40);
+    gap: rem(32) fluid(60, 32);
 
     background-color: var(--color-dark-alt);
     border-radius: var(--border-radius);
@@ -28,7 +28,7 @@
 
     &--light {
       background-color: var(--color-light);
-      padding: rem(6);
+      padding: rem(5);
       border-radius: var(--border-radius);
     }
   }

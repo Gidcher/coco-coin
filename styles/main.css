@@ -518,7 +518,7 @@ button[aria-label]::before {
   row-gap: clamp(1rem, 0.0330578512rem + 3.9669421488vw, 4rem);
 }
 .section:not(.hero):not(.info-card) {
-  margin-block: clamp(1.5rem, 0.0495867769rem + 5.9504132231vw, 6rem);
+  margin-block: clamp(1.5rem, 0.3719008264rem + 4.6280991736vw, 5rem);
 }
 .section:nth-child(2) {
   margin-top: clamp(1rem, 0.194214876rem + 3.305785124vw, 3.5rem);
@@ -546,7 +546,7 @@ button[aria-label]::before {
     background-position: 0 0;
   }
   100% {
-    background-position: 100% 100%;
+    background-position: 20% 100%;
   }
 }
 .hero {
@@ -561,7 +561,7 @@ button[aria-label]::before {
   background: url("../images/logo.png");
   background-color: var(--color-main);
   background-size: 14.0625rem 14.0625rem;
-  animation: moveBackground 240s linear infinite;
+  animation: moveBackground 210s linear infinite;
   filter: blur(0.0625rem);
   z-index: -1;
 }
@@ -634,7 +634,7 @@ button[aria-label]::before {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 2rem clamp(2rem, 1.4359504132rem + 2.3140495868vw, 3.75rem);
   background-color: var(--color-dark-alt);
   border-radius: var(--border-radius);
   padding: clamp(0.75rem, 0.5082644628rem + 0.9917355372vw, 1.5rem);
@@ -652,7 +652,7 @@ button[aria-label]::before {
 }
 .exchanges__item--light {
   background-color: var(--color-light);
-  padding: 0.375rem;
+  padding: 0.3125rem;
   border-radius: var(--border-radius);
 }
 .exchanges__image {
@@ -681,18 +681,16 @@ button[aria-label]::before {
   }
 }
 .charity__partner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   transition: transform 0.2s ease-in-out;
 }
 .charity__partner:hover {
   transform: scale(1.05);
 }
 .charity__image {
-  width: clamp(6.25rem, 5.242768595rem + 4.132231405vw, 9.375rem);
+  width: clamp(12.5rem, 11.492768595rem + 4.132231405vw, 15.625rem);
   height: auto;
 }
 .charity__text {
@@ -842,14 +840,14 @@ button[aria-label]::before {
   .soc1als__link:hover {
     background-color: var(--color-accent);
     color: var(--color-light);
-    border-color: var(--color-main);
+    border-color: var(--color-dark-alt);
   }
 }
 @media (any-hover: none) {
   .soc1als__link:active {
     background-color: var(--color-accent);
     color: var(--color-light);
-    border-color: var(--color-main);
+    border-color: var(--color-dark-alt);
   }
 }
 .soc1als__icon {

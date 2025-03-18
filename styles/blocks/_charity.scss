@@ -19,11 +19,9 @@
   }
 
   &__partner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     transition: transform 0.2s ease-in-out;
 
     &:hover {
@@ -32,7 +30,7 @@
   }
 
   &__image {
-    width: fluid(150, 100);
+    width: fluid(250, 200);
     height: auto;
   }
 
