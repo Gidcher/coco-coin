@@ -309,7 +309,9 @@ button[aria-label]::before {
 }
 
 .logo {
-  max-width: clamp(3.125rem, 2.722107438rem + 1.652892562vw, 4.375rem);
+  max-width: clamp(7.8125rem, 7.3088842975rem + 2.0661157025vw, 9.375rem);
+  display: flex;
+  align-items: center;
 }
 @media (any-hover: hover) {
   .logo:hover {

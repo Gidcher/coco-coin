@@ -1,7 +1,9 @@
 @use '../helpers' as *;
 
 .logo {
-  max-width: fluid(70, 50);
+  max-width: fluid(150, 125);
+  display: flex;
+  align-items: center;
   
   @include hover {
     scale: 1.1;
