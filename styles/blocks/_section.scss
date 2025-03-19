@@ -18,8 +18,8 @@
 
   &__header {
     display: grid;
-    row-gap: fluid(12, 10);
-    padding: fluid(20, 16) fluid(30, 16);
+    row-gap: fluid(12, 8);
+    padding: fluid(20, 12) fluid(30, 12);
     background-color: var(--color-dark-alt);
     border-radius: var(--border-radius);
     border: var(--border);
@@ -31,5 +31,9 @@
 
   &__description {
     @include fluid-text(22, 14);
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }
