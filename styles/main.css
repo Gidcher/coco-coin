@@ -559,7 +559,7 @@ button[aria-label]::before {
 .hero {
   position: relative;
   background: none;
-  padding: clamp(1rem, 0.6776859504rem + 1.3223140496vw, 2rem);
+  padding: clamp(1rem, 0.9194214876rem + 0.3305785124vw, 1.25rem);
 }
 .hero::before {
   content: "";
@@ -577,7 +577,7 @@ button[aria-label]::before {
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 0.25rem;
 }
 @media (width <= 47.99875rem) {
   .hero__body {
@@ -594,6 +594,10 @@ button[aria-label]::before {
   border-radius: var(--border-radius);
   border: var(--border);
   padding: clamp(0.5rem, 0.3388429752rem + 0.6611570248vw, 1rem);
+}
+.hero__liquidity {
+  padding-inline: clamp(0rem, -0.3223140496rem + 1.3223140496vw, 1rem);
+  text-shadow: var(--text-shadow);
 }
 @media (width <= 47.99875rem) {
   .hero__button {
