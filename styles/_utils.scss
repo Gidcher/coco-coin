@@ -3,10 +3,7 @@
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
-
-  &:not(.info-card:not(#join-us)) {
-    padding-inline: var(--container-padding-x);
-  }
+  padding-inline: var(--container-padding-x);
 }
 
 .visually-hidden {
@@ -25,3 +22,6 @@
   }
 }
 
+.is-rounded {
+  border-radius: 50%;
+}

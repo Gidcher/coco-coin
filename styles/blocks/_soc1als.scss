@@ -1,6 +1,12 @@
 @use '../helpers' as *;
 
 .soc1als {
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: fluid(48, 16);
   
   &__link{
     display: flex;

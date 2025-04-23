@@ -10,10 +10,10 @@
     row-gap: rem(40);
     justify-content: space-between;
     align-items: center;
-    padding-inline: fluid(48, 16);
+    padding: rem(4) fluid(48, 16);
 
     @include mobile-above {
-      background: url("../images/gallery/gallery-bg.png") center/contain no-repeat;
+      background: url("../images/gallery-bg.png") center/contain no-repeat;
     }
 
 
@@ -32,7 +32,7 @@
   }
 
   &__item {
-    border: var(--border);
+    outline: var(--border);
     min-width: rem(290);
 
     @include mobile-above {
