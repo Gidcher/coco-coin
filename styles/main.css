@@ -628,6 +628,7 @@ button[aria-label]::before {
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
+    gap: 0.5rem;
   }
 }
 .hero__value {
@@ -834,4 +835,9 @@ button[aria-label]::before {
 }
 .soc1als__icon {
   padding: 0.25rem;
+}
+@media (width <= 47.99875rem) {
+  .soc1als__item_wide:first-child {
+    flex: 1 0 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

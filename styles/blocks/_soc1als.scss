@@ -29,4 +29,12 @@
   &__icon {
     padding: rem(4);
   }
+
+  &__item_wide {
+    &:first-child {
+      @include mobile {
+        flex: 1 0 100%;
+      }
+    }
+  }
 }
