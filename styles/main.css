@@ -541,6 +541,9 @@ button[aria-label]::before {
 .section__header#mx {
   background: url("../images/mx-bg.jpg") center/cover no-repeat;
 }
+.section__header#mx p {
+  text-shadow: var(--text-shadow);
+}
 .section__title {
   text-align: center;
 }

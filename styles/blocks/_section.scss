@@ -26,6 +26,10 @@
 
     &#mx {
       background: url('../images/mx-bg.jpg') center/cover no-repeat;
+
+      & p {
+        text-shadow: var(--text-shadow);
+      }
     }
   }
 
