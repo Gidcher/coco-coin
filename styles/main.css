@@ -538,6 +538,9 @@ button[aria-label]::before {
   border-radius: var(--border-radius);
   border: var(--border);
 }
+.section__header#mx {
+  background: url("../../images/mx-bg.jpg") center/cover no-repeat;
+}
 .section__title {
   text-align: center;
 }

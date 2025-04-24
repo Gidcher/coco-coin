@@ -23,6 +23,10 @@
     background-color: var(--color-dark-alt);
     border-radius: var(--border-radius);
     border: var(--border);
+
+    &#mx {
+      background: url('../../images/mx-bg.jpg') center/cover no-repeat;
+    }
   }
 
   &__title {
