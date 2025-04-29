@@ -2,12 +2,15 @@
 
 :root {
   --color-light: #FFFFFF; 
+  --color-gray:#bebebe;
 
   --color-dark: #0d0d0d;
   --color-dark-alt: #1c1b1b;
   
   --color-main: #060a01;
   --color-accent: #97d24b; 
+  --color-dark-accent: #57782c; 
+  --color-red: #ce2222;
 
   --border: #{rem(2)} solid var(--color-accent);
 

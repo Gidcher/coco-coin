@@ -76,7 +76,7 @@
   </header>
 
   <main>
-    <section class="section container hero">
+    <section class="section container hero" id="hero">
       <header class="section__header">
         <h1 class="section__title h2">CoCo: The Meme Revolution in Web3</h1>
         <p class="section__description">
@@ -275,7 +275,7 @@
       </ul>
     </section>
 
-    <section class="info">
+    <section class="info" id="coming-soon">
       <section class="section container info-card">
         <header class="section__header info-card__content">
           <h2 class="section__title">
@@ -371,7 +371,7 @@
       </ul>
     </section>
 
-    <section class="section container gallery">
+    <section class="section container gallery" id="350k-bsc">
       <header class="section__header">
         <h2 class="section__title">
           COCOCOIN's CTO received $350k in total from Binance Smart Chain
@@ -451,7 +451,7 @@
       </ul>
     </section>
 
-    <section class="section container gallery">
+    <section class="section container gallery" id="300k-bsc">
       <header class="section__header">
         <h2 class="section__title">
           Official Binance Smart Chain buys $COCO on $300,000
@@ -497,7 +497,7 @@
       </ul>
     </section>
 
-    <section class="section container gallery">
+    <section class="section container">
       <header class="section__header" id="mx">
         <h2 class="section__title">
           $COCO is integrated into MX ecosystem
@@ -918,6 +918,90 @@
           <span class="list__text">CoinMarketCap</span>
         </a>
       </div>
+    </section>
+
+    <section class="section container" id="feedback-form">
+      <header class="section__header">
+        <h2 class="section__title">
+          Contact us
+        </h2>
+        <form class="feedback-form" data-js-feedback-form>
+          <div class="feedback-form__cell field">
+            <label class="field__label" for="firstName">
+              First Name
+              <span class="field__required-star" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="field__control"
+              id="firstName"
+              placeholder="Steve"
+              required
+              data-js-feedback-first-name
+            >
+          </div>
+          <div class="feedback-form__cell field">
+            <label class="field__label" for="lastName">
+              Last Name
+            </label>
+            <input
+              class="field__control"
+              id="lastName"
+              placeholder="Harrington"
+              required
+              data-js-feedback-last-name
+            >
+          </div>
+          <div class="feedback-form__cell field">
+            <label class="field__label" for="email">
+              Email
+              <span class="field__required-star" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="field__control"
+              id="email"
+              placeholder="steveharrington@gmail.com"
+              type="email"
+              required
+              data-js-feedback-email
+            >
+          </div>
+          <div class="feedback-form__cell field">
+            <label class="field__label" for="tel">
+              Phone Number
+            </label>
+            <input
+              class="field__control"
+              id="tel"
+              placeholder="+86 139 1099 8888"
+              type="tel"
+              required
+              data-js-feedback-phone
+            >
+          </div>
+          <div class="feedback-form__cell feedback-form__cell-wide field">
+            <label class="field__label" for="message">
+              Message
+              <span class="field__required-star" aria-hidden="true">*</span>
+            </label>
+            <textarea
+              class="field__control"
+              id="message"
+              placeholder="Hi! I have a question..."
+              required
+              data-js-feedback-message
+            ></textarea>
+          </div>
+          <div class="feedback-form__cell feedback-form__cell-wide feedback-form__submit">
+            <button
+              class="feedback-form__submit-button button"
+              type="submit"
+              data-js-feedback-submit
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </header>
     </section>
   </main>
 
