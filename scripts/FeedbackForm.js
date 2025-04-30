@@ -28,13 +28,20 @@ class FeedbackForm extends BaseComponent {
     );
   
     const subject = encodeURIComponent('A Message for the CoCo CTO');
-    const body = encodeURIComponent(
-      `${this.message.value.trim()}\n` +
-      `------\n` +
-      `From: ${this.firstName.value} ${this.lastName.value}\n` +
-      `Email: ${this.email.value}\n` +
-      `Phone: ${this.phone.value}\n`
-    );
+  
+    const lines = [
+      this.message.value.trim(),
+      '------',
+      `From: ${this.firstName.value} ${this.lastName.value}`,
+      `Email: ${this.email.value}`
+    ];
+  
+    const phoneVal = this.phone.value.trim();
+    if (phoneVal) {
+      lines.push(`Phone: ${phoneVal}`);
+    }
+  
+    const body = encodeURIComponent(lines.join('\n'));
   
     const mailtoLink = `mailto:test@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
