@@ -24,7 +24,7 @@ class FeedbackForm extends BaseComponent {
     e.preventDefault();
   
     alert(
-      "Reminder: You may add attachments once your email draft opens."
+      "Reminder: You can add the relevant files in the draft email after it is opened."
     );
   
     const subject = encodeURIComponent('A Message for the CoCo CTO');
