@@ -22,20 +22,25 @@ class FeedbackForm extends BaseComponent {
 
   onSubmit = (e) => {
     e.preventDefault();
-
-    const subject = encodeURIComponent('New Contact Form Submission');
-    const body = encodeURIComponent(
-      `First Name: ${this.firstName.value}\n` +
-      `Last Name: ${this.lastName.value}\n` +
-      `Email: ${this.email.value}\n` +
-      `Phone: ${this.phone.value}\n` +
-      `Message: ${this.message.value}`
+  
+    alert(
+      "Reminder: You may add attachments once your email draft opens."
     );
-
-    const mailtoLink = `mailto:rustamov_rustam_ruslanovich@mail.ru?subject=${subject}&body=${body}`;
+  
+    const subject = encodeURIComponent('A Message for the CoCo CTO');
+    const body = encodeURIComponent(
+      `${this.message.value.trim()}\n` +
+      `------\n` +
+      `From: ${this.firstName.value} ${this.lastName.value}\n` +
+      `Email: ${this.email.value}\n` +
+      `Phone: ${this.phone.value}\n`
+    );
+  
+    const mailtoLink = `mailto:test@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
-  }
+  }  
 }
+
 
 class FeedbackFormCollection {
   constructor() {
